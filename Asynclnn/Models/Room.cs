@@ -8,6 +8,14 @@ namespace Asynclnn.Models
     public class Room
     {
         public int ID { get; set; }
+        public string Name { get; set; }
+        public string Layouts { get; set; }
+        public enum Layout
+        {
+            Studio=0,
+            onebed=1,
+            twobed=2
+        }
 
 
     }
