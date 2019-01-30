@@ -7,5 +7,8 @@ namespace Asynclnn.Models
 {
     public class HotelRoom
     {
+        public int ID { get; set; }
+
+
     }
 }

@@ -7,5 +7,7 @@ namespace Asynclnn.Models
 {
     public class RoomAmenities
     {
+        public int ID { get; set; }
+
     }
 }
