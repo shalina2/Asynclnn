@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Asynclnn.Models
+namespace Async.Models
 {
     public class Amenities
     {
