@@ -7,5 +7,10 @@ namespace Asynclnn.Controllers
 {
     public class RoomAmenities
     {
+        public int ID { get; set; }
+        public int AmenitiesID { get; set; }
+        public int RoomID { get; set; }
+
+
     }
 }

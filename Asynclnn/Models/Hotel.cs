@@ -11,5 +11,6 @@ namespace Async.Models
 
         public string Name { get; set; }
         public string phone { get; set; }
+        public string Address { get; internal set; }
     }
 }
