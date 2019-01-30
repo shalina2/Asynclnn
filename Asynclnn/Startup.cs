@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Asynclnn.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -27,6 +29,12 @@ namespace Asynclnn
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddDbContext<AsyncDbContext>(options =>// make dbcontext and send the options
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")) // after this application db context will be treated as a singleton
+
+
+
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

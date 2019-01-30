@@ -11,8 +11,7 @@ namespace Asynclnn.Controllers
         public IActionResult Index()
 
         {
-            return View();
-
+            return View(); //telling to get something from the view
         }
     }
 }
